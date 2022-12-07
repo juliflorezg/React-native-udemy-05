@@ -1,12 +1,17 @@
 import React from 'react';
-import { CounterScreen } from './src/screens/CounterScreen';
-import { HolaMundoScreen } from './src/screens/HolaMundoScreen';
+import { SafeAreaView } from 'react-native';
+import { BoxObjectModel } from './src/screens/BoxObjectModelScreen';
+import { DimensionesScreen } from './src/screens/DimensionesScreen';
+// import { ContadorScreen } from './src/screens/ContadorScreen';
+// import { HolaMundoScreen } from './src/screens/HolaMundoScreen';
 
 export const App = () => {
   return (
-    <>
-      <HolaMundoScreen />
-      <CounterScreen />
-    </>
+    <SafeAreaView style={{ flex: 1, paddingTop: 40, backgroundColor: "#ddd"}}>
+      {/* <HolaMundoScreen />
+      <ContadorScreen /> */}
+      <BoxObjectModel />
+      <DimensionesScreen/>
+    </SafeAreaView>
   );
 };
